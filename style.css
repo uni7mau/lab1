@@ -1,0 +1,113 @@
+:root {
+    --default-background-color: #bbd2ea;
+    --header-font-color : #3677b7;
+    --default-font-color: #000000;
+    --special-font-color-v1: #5488cc;
+    --special-font-color-v2: #255490;
+    --default-line-color: #000000;
+    --minor-background-color-v1: #eaeaea;
+    --minor-background-color-v2: #c0c0c0;
+    --minor-background-color-v2-hover: rgba(192,192,192, 0.8);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--default-font-color);
+    z-index: 1;
+}
+
+/* --------------------------------------- */
+
+.lab1 {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+}
+
+.avatar_place {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    right: 20px;
+    top: 57px;
+}
+
+.page_title_place {
+    margin: 20px 0;
+}  
+
+.page_title {
+
+}
+
+.title_place {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background-color: var(--default-background-color);
+    display: flex;
+    align-items: center;
+}
+
+
+.title_place > h2 {
+    font-weight: 1000;
+    margin-left: 10px;
+    color: var(--header-font-color);
+}
+
+.paragraph {
+    line-height: 35px;
+}
+
+.courses_place table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.courses_place table, th, td {
+    border: 2px solid var(--default-line-color);
+    border-collapse: collapse;
+}
+
+.courses_place th, td {
+    padding: 0 5px;
+}
+
+.courses_place table tr:nth-child(3), tr:nth-child(5), tr:nth-child(7) {
+    background-color: var(--minor-background-color-v1);
+}
+
+.input_place {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_place .input_cell {
+
+    display: inline-flex;
+}
+
+.input_place p {
+    margin-right: 10px;
+}
+
+.submit_information .submit_button {
+    padding: 3px 10px;
+    margin-top: 10px;
+    background-color: var(--minor-background-color-v2);
+    border: 1px solid;
+    color: var(--default-font-color);
+    cursor: pointer;
+}
+
+.submit_information .submit_button:active {
+    background-color: var(--minor-background-color-v2-hover);
+}
